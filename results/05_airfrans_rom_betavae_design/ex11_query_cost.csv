@@ -1,0 +1,12 @@
+item,kind,n_queries,seconds_mean,seconds_min,seconds_max,ms_per_query
+"beta-VAE chain, 3,600 candidates → (CL, CD)",measured now (3 repeats after warm-up),3600.0,0.10614829168965419,0.10499662510119379,0.10751962498761714,0.029485636580459496
+"beta-VAE chain, 1 candidate → (CL, CD)",measured now (3 repeats after warm-up),1.0,0.040028749693495534,0.03868204110767692,0.04128345800563693,40.028749693495534
+"decoder, 1 latent vector → full field (5 × 64 × 128)",measured now (3 repeats after warm-up),1.0,0.019674972320596378,0.019502541981637478,0.019788417033851147,19.67497232059638
+"surrogate + decoder, 1 design → full field",measured now (3 repeats after warm-up),1.0,0.038806305693772934,0.03842966700904071,0.03907450009137392,38.806305693772934
+"Lesson 10.3 coefficient surrogate, 3,600 candidates",measured now (3 repeats after warm-up),3600.0,0.04557894434159001,0.044320042012259364,0.04690716601908207,0.012660817872663892
+"training of the POD latent surrogate, seed 2026 (1724 epochs, early stopping)",recorded when trained (.json next to the model),,38.1,,,
+"training of the POD latent surrogate, seed 2027 (1469 epochs, early stopping)",recorded when trained (.json next to the model),,31.7,,,
+"training of the POD latent surrogate, seed 2028 (1095 epochs, early stopping)",recorded when trained (.json next to the model),,23.7,,,
+"training of the beta-VAE latent surrogate, seed 2026 (851 epochs, early stopping)",recorded when trained (.json next to the model),,18.7,,,
+"training of the beta-VAE latent surrogate, seed 2027 (887 epochs, early stopping)",recorded when trained (.json next to the model),,19.2,,,
+"training of the beta-VAE latent surrogate, seed 2028 (1374 epochs, early stopping)",recorded when trained (.json next to the model),,29.2,,,
