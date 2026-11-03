@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "airfoil-rom"
+version = "0.1.0"
+description = "Pure functions of the airfoil reduced-order-model notebooks (POD, beta-VAE, latent surrogate, flap-control environment)."
+requires-python = ">=3.12"
+dependencies = ["numpy", "pandas", "scikit-learn"]
+
+[project.optional-dependencies]
+models = ["tensorflow", "keras"]
+control = ["gymnasium", "stable-baselines3"]
+plots = ["matplotlib"]
+test = ["pytest", "nbformat"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-ra"
+filterwarnings = ["ignore::DeprecationWarning"]
